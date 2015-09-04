@@ -1,0 +1,111 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 2.0 (8/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Trey Hunner (http://www.treyhunner.com/)
+%
+% Important note:
+% This template requires the resume.cls file to be in the same directory as the
+% .tex file. The resume.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%   PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{resume} % Use the custom resume.cls style
+
+\usepackage{hyperref}
+% document margins
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry}
+                                                                       
+
+% name
+\name{Deric Hua Pang}
+% address
+\address{7036 Twin Forks Peak Street \\ Las Vegas, NV 89166}
+% seconary address
+\address{5000 25th Ave NE \\ Seattle, WA 98105}
+% phone number and email
+\address{(702)~$\cdot$~606~$\cdot$~5830 \\ dericp@cs.washington.edu}
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%   EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+
+{\bf University of Washington, Seattle} \hfill {September 2014 - Present}
+\\ B.S. in Computer Science \& Engineering \\ Dean's List \\ Overall GPA: 3.86/4
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%   WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Experience}
+
+  \begin{rSubsection}{University of Washington Computer Science \& Engineering}
+    {March 2015 -- Present}{Research Assistant}{Seattle, WA}
+  \item Worked as part of the Programming Languages and Software Engineering
+    group.
+  \item Studied patch minimization and delta debugging.
+  \end{rSubsection}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%   PROJECTS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Projects}
+
+\begin{rSubsection}{Bug Isolation}{March 2015 -- Present}{}{}
+\item A java patch minimizer for use with the Defects4J java bug database.
+\item Utilizes delta debugging to isolate defects and faults in source code.
+\end{rSubsection}
+
+\begin{rSubsection}{\href{https://github.com/dericp/diff-utils}{Diff-Utils}}{August 2015}{}{}
+\item A diff utility that allows for the syntactically correct manipulation and
+  modification of unified diff files.
+\item Created for use in patch minimization research.
+\end{rSubsection}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%   TECHNICAL STRENGTHS SECTION (Renamed)
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Skills}
+
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+Computer Languages & Java, Bash, HTML \& CSS, Ruby \\ Tools & Emacs, Vim,
+Defects4J \\
+\end{tabular}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%   EXAMPLE SECTION
+%----------------------------------------------------------------------------------------
+
+%\begin{rSection}{Section Name}
+
+%Section content\ldots
+
+%\end{rSection}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
