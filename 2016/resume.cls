@@ -26,6 +26,9 @@
 \usepackage{array} % Required for boldface (\bf and \bfseries) tabular columns
 \usepackage{ifthen} % Required for ifthenelse statements
 
+\usepackage[T1]{fontenc}
+\usepackage{librecaslon}
+
 \pagestyle{empty} % Suppress page numbers
 
 %----------------------------------------------------------------------------------------
@@ -105,6 +108,16 @@
 }{
   \end{list}
 }
+
+\newenvironment{rQualifications}{ % 4 input arguments - company name, year(s) employed, job title and location
+  \vspace{0.5em} % Some space after the list of bullet points
+  \begin{list}{$\cdot$}{\leftmargin=0em} % \cdot used for bullets, no indentation
+   \itemsep -0.5em \vspace{-0.5em} % Compress items in list together for aesthetics
+  }{
+  \end{list}
+  \vspace{0.5em} % Some space after the list of bullet points
+}
+
 
 %----------------------------------------------------------------------------------------
 %	WORK EXPERIENCE FORMATTING
