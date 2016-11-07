@@ -25,9 +25,9 @@
 \usepackage[parfill]{parskip} % Remove paragraph indentation
 \usepackage{array} % Required for boldface (\bf and \bfseries) tabular columns
 \usepackage{ifthen} % Required for ifthenelse statements
+\usepackage{fontspec}
 
-\usepackage[T1]{fontenc}
-\usepackage{librecaslon}
+\setmainfont{GillSans} % font name may be different on non-MacOSX systems
 
 \pagestyle{empty} % Suppress page numbers
 
@@ -109,7 +109,7 @@
   \end{list}
 }
 
-\newenvironment{rQualifications}{ % 4 input arguments - company name, year(s) employed, job title and location
+\newenvironment{rQualifications}{
   \vspace{0.5em} % Some space after the list of bullet points
   \begin{list}{$\cdot$}{\leftmargin=0em} % \cdot used for bullets, no indentation
    \itemsep -0.5em \vspace{-0.5em} % Compress items in list together for aesthetics
