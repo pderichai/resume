@@ -1,0 +1,128 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 2.0 (8/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Trey Hunner (http://www.treyhunner.com/)
+%
+% Important note:
+% This template requires the resume.cls file to be in the same directory as the
+% .tex file. The resume.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%   PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{resume} % Use the custom resume.cls style
+
+\usepackage{hyperref}
+% document margins
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry}
+
+% name
+\name{Deric Pang}
+
+% website
+\address{{\href{https://homes.cs.washington.edu/~dericp}{https://homes.cs.washington.edu/\textasciitilde{}dericp}}}
+% github
+\address{{\href{https://github.com/dericp}{https://github.com/dericp}}}
+% email and phone number
+\address{\href{mailto:dericp@cs.washington.edu}{dericp@cs.washington.edu}}
+
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%   TECHNICAL STRENGTHS SECTION (Renamed)
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Skills Summary}
+
+	\begin{rQualifications}
+		\item Built a production system which integrated with AWS  to validate credit card and bank account numbers.
+		\item Built speech recognition systems using machine learning and language processing techniques.
+		\item Developed an \href{https://github.com/dericp/patch-minimization}{automated bug finder} and co-authored \href{https://homes.cs.washington.edu/~dericp/resources/fault-localization-tr160803.pdf}{\emph{Evaluating \& improving fault localization techniques}}.
+	\end{rQualifications}
+
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{3ex}} l }
+	Languages: & Java, Python, Shell, JavaScript, Scala, HTML \& CSS, PHP, C, C++, Lua
+	\\ Tech/Tools: & AWS, Git, Ant, Gradle, Kaldi, Deep Speech 2, Torch, Apache Storm, AngularJS
+\end{tabular}
+
+\end{rSection}
+
+
+%----------------------------------------------------------------------------------------
+%   EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+
+  {\href{https://www.cs.washington.edu/}{\bf University of Washington, Seattle}} \hfill {Sept. 2014 -- Present} \\
+  B.S. in Computer Science \\
+  Expected graduation: June 2018 \\
+  Dean's List every quarter \\
+  Overall GPA: 3.78/4.00
+
+  {\href{https://www.inf.ethz.ch/}{\bf Swiss Federal Institute of Technology in Z\"{u}rich (ETH Z\"{u}rich)}} \hfill {Fall 2016} \\
+  University of Washington Computer Science \& Engineering Direct Exchange  \\
+  Took graduate courses in computer science: Data Mining, Information Retrieval
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%   WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Experience}
+
+ \begin{rSubsection}{\href{https://uwplse.org/}{Programming Languages and Software Engineering Lab}}
+    {Mar. 2015 -- Present}{Undergraduate Researcher, advised by \href{https://homes.cs.washington.edu/~mernst/}{Michael Ernst} and \href{https://people.cs.umass.edu/~rjust/}{Ren{\'e} Just}}{University of Washington}
+  \item Working on the \href{https://github.com/TellinaTool}{Tellina} project to generate bash commands from natural language.
+  \item Built an \href{https://github.com/dericp/patch-minimization}{automated bug finder} using patch minimization and delta debugging techniques.
+  \item Co-authored \href{https://homes.cs.washington.edu/~dericp/resources/fault-localization-tr160803.pdf}{\emph{Evaluating \& improving fault localization techniques}} --- accepted to \href{http://icse2017.gatech.edu/}{ICSE 2017}.
+  \end{rSubsection}
+  
+  \begin{rSubsection}{\href{http://www.marchex.com/}{Marchex}}
+    {June 2016 -- Sept. 2016}{Software Engineering/Research Intern}{Seattle, WA}
+  \item Built a speech recognition system using deep learning techniques to transcribe phone calls.
+  \item Trained a neural network based on the Deep Speech 2 architecture.
+  \item Transcribed Australian English with the Kaldi automated speech recognition toolkit.
+  \end{rSubsection}
+
+  \begin{rSubsection}{\href{https://www.amazon.com/}{Amazon}}
+    {Mar. 2016 -- June 2016}{Software Development Engineering Intern}{Seattle, WA}
+  \item Developed business critical software in Amazon Payment Services to help validate payment instruments like credit card and bank account numbers.
+  \item Integrated with AWS technologies such as AWS SWF, Lambda, S3, DynamoDB, SQS, and SNS.
+  \end{rSubsection}
+  
+  \begin{rSubsection}{\href{https://courses.cs.washington.edu/courses/cse331/16wi/}{CSE 331 --- Software Design and Implementation}}
+    {Winter 2016}{Teaching Assistant}{University of Washington}
+  \item Planned and delivered lectures during weekly recitations.
+  \item Graded and provided feedback for weekly programming projects.
+  \item Met weekly with the lecturing professor to discuss teaching, grading, and course progress.
+  \end{rSubsection}
+  
+\end{rSection}
+
+
+%----------------------------------------------------------------------------------------
+%   EXAMPLE SECTION
+%----------------------------------------------------------------------------------------
+
+%\begin{rSection}{Section Name}
+
+%Section content\ldots
+
+%\end{rSection}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
