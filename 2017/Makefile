@@ -1,2 +1,2 @@
 resume: deric-pang-resume-2017.tex
-	xelatex deric-pang-resume-2017.tex && open deric-pang-resume-2017.pdf
+	xelatex deric-pang-resume-2017.tex
