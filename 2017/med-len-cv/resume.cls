@@ -28,6 +28,7 @@
 \usepackage{ifthen} % Required for ifthenelse statements
 \usepackage{fontspec} % Custom macOS fonts
 \usepackage{cite} % Publications
+\usepackage{natbib}
 \usepackage{hyperref} % Links in resume
 
 \setmainfont{GillSans} % font name may be different on non-macOS systems
