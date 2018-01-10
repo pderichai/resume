@@ -1,0 +1,77 @@
+\documentclass{resume}
+
+% document margins
+\usepackage[left=0.75in,top=0.4in,right=0.75in,bottom=0.3in]{geometry}
+
+% name
+\name{Deric Pang}
+
+% header
+\address{\href{mailto:dericp@cs.washington.edu}{dericp@cs.washington.edu}}
+\address{\href{https://homes.cs.washington.edu/~dericp}{https://homes.cs.washington.edu/\textasciitilde{}dericp}}
+
+\begin{document}
+
+\begin{rSection}{Education}
+
+  {\href{https://www.cs.washington.edu/}{\bf University of Washington, Seattle}} \hfill {Graduating June 2019} \\
+  Combined B.S./M.S. Program in Computer Science \\
+  Paul G. Allen School of Computer Science \& Engineering \\
+  Overall GPA: 3.79/4.00 --- Dean's List
+
+  % coursework
+  \begin{tabular}{ @{} >{\bfseries}l @{\hspace{3ex}} l }
+    Graduate Coursework: & Statistical Methods, Data Mining, Information Retrieval \\ Senior Coursework: & Machine Learning, Natural Language Processing, Data Visualization,\\ & Complexity, Algorithms, Graphics, Visual Computing 
+  \end{tabular}
+
+\end{rSection}
+
+\begin{rSection}{Experience}
+
+  \begin{rSubsection}{Alexa Machine Learning --- {\href{https://www.amazon.com/}{Amazon}}}{June 2017 -- Sept. 2017}{Software Development Engineering Intern}{Seattle, WA}
+    \item Worked on Amazon's internal deep learning framework specialized for automatic
+    speech recognition.
+    \item Launched a system to translate Alexa's production acoustic model into other deep learning frameworks.
+  \end{rSubsection}
+
+  \begin{rSubsection}{\href{https://uwplse.org/}{Programming Languages and Software Engineering Lab}}
+    {Mar. 2015 -- Present}{Undergraduate Researcher, advised by \href{https://homes.cs.washington.edu/~mernst/}{Michael Ernst}, \href{https://www.cs.washington.edu/people/faculty/lsz}{Luke Zettlemoyer}, and \href{https://people.cs.umass.edu/~rjust/}{Ren{\'e} Just}}{University of Washington}
+  \item Working on the \href{https://github.com/TellinaTool}{Tellina} project \citep{LinWPVZE2017:TR} to generate bash commands from plain English using deep learning.
+  \item Created an \href{https://github.com/dericp/patch-minimization}{automatic bug finder} using patch minimization and delta debugging techniques \citep{PearsonCJFAEPK2017}.
+  \end{rSubsection}
+  
+  \begin{rSubsection}{\href{http://www.marchex.com/}{Marchex}}
+    {June 2016 -- Sept. 2016}{Software Engineering/Research Intern}{Seattle, WA}
+  \item Built an automatic speech recognition system based on the Deep Speech 2 neural network architecture.
+  \item Improved Australian English transcription with the Kaldi automatic speech recognition toolkit.
+  \end{rSubsection}
+
+  \begin{rSubsection}{\href{https://www.amazon.com/}{Amazon}}
+    {Mar. 2016 -- June 2016}{Software Development Engineering Intern}{Seattle, WA}
+  \item Used AWS SWF, Lambda, S3, DynamoDB, SQS, and SNS to automatically update bank account validation files.
+  \item Reduced on call workload by 20 hours a month.
+  \end{rSubsection}
+  
+  \begin{rSubsection}{\href{https://courses.cs.washington.edu/courses/cse446/17au/}{Machine Learning} | \href{https://courses.cs.washington.edu/courses/cse331/16wi/}{Software Design \& Implementation}}
+    {Winter 2016 -- Present}{Teaching Assistant for CSE 446 and CSE 331}{University of Washington}
+  \item Planned and delivered lectures during weekly recitations.
+  \item Held office hours and provided feedback for homework assignments and programming projects.
+  \end{rSubsection}
+  
+\end{rSection}
+
+\begin{rSection}{Skills Summary}
+
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{3ex}} l }
+	Languages: & Python, Java, C, C++, Shell, Scala, HTML \& CSS, JavaScript, \LaTeX
+	\\ Tech/Tools: & TensorFlow, MXNet, PyTorch, AWS, D3, Git, Ant, Gradle, Kaldi
+\end{tabular}
+
+\end{rSection}
+
+\begin{rSection}{Publications}
+\bibliographystyle{abbrv}
+\bibliography{publications}
+\end{rSection}
+
+\end{document}
