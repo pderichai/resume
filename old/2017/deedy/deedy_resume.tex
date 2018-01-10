@@ -1,0 +1,265 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{deedy-resume}
+\usepackage{fancyhdr}
+\urlstyle{same}
+
+\pagestyle{fancy}
+\fancyhf{}
+ 
+\rfoot{Page \thepage \hspace{1pt}}
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Deric}{Pang}{
+    \href{mailto:dericp@cs.washington.edu}{dericp@cs.washington.edu}\\
+    \href{https://homes.cs.washington.edu/~dericp}{homes.cs.washington.edu/\textasciitilde{}dericp} 
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{\href{http://www.washington.edu/}{Univ. of Washington}}
+\descript{M.S. in Computer Science}
+\location{Graduating June 2019 | Seattle}
+\href{https://www.cs.washington.edu/}{Allen School of Computer\\
+Science \& Engineering}\\
+Combined B.S./M.S. Program
+\sectionsep
+
+\subsection{\href{http://www.washington.edu/}{Univ. of Washington}}
+\descript{B.S. in Computer Science}
+\location{Graduating June 2018 | Seattle}
+\href{https://www.cs.washington.edu/}{Allen School of Computer\\
+Science \& Engineering}\\
+Dean's List\\
+\location{GPA: 3.77 / 4.0}
+\sectionsep
+
+\subsection{\href{https://www.inf.ethz.ch/}{ETH Z\"urich}}
+\descript{UW CSE Direct Exchange}
+\location{2016 Fall Semester}
+\location{Z\"urich, Switzerland}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+Github: \href{https://github.com/dericp}{\bf github.com/dericp} \\
+LinkedIn: \href{https://www.linkedin.com/in/dericp}{\bf linkedin.com/in/dericp}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+\subsection{Graduate}
+Machine Learning for Big Data\\
+Data Mining (ETH)\\
+Information Retrieval (ETH)
+\sectionsep
+
+\subsection{Undergraduate}
+Machine Learning\\
+Natural Language Processing\\
+Visual Computing (ETH)\\
+Algorithms\\
+Systems Programming\\
+Data Structures \& Parallelism\\
+Hardware Software Interface\\
+Software Design \& Implementation\\
+Human Computer Interaction (ETH)\\
+Web Programming
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Languages}
+Python \textbullet{} Java \textbullet{} C \textbullet{} C++ \textbullet{} Shell\\
+Scala \textbullet{} HTML \& CSS \textbullet{} JavaScript\\
+PHP \textbullet{} Matlab \textbullet{} \LaTeX\ \\ 
+\sectionsep
+\subsection{Techs \& Tools}
+TensorFlow \textbullet{} MXNet \textbullet{} PyTorch\\
+AWS \textbullet{} Git \textbullet{} Ant \textbullet{} Gradle \textbullet{} Kaldi
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+\runsubsection{\href{https://www.amazon.com/}{Amazon}}
+\descript{| Software Development Engineering Intern}
+\location{June 2017 - Sept 2017 | Seattle, WA}
+\begin{tightemize}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+    \item Intern in Alexa Machine Learning.
+    \item Worked on Amazon's internal deep learning framework specialized for automatic
+    speech recognition.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{\href{http://www.marchex.com/}{Marchex}}
+\descript{| Software Engineering/Research Intern}
+\location{June 2016 – Sept 2016 | Seattle, WA}
+\begin{tightemize}
+  \item Built an automatic speech recognition system using deep learning techniques to transcribe phone calls.
+  \item Trained a neural network based on the Deep Speech 2 architecture.
+  \item Transcribed Australian English with the Kaldi speech recognition toolkit.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{\href{https://www.amazon.com/}{Amazon}}
+\descript{| Software Development Engineering Intern }
+\location{Mar. 2016 – June 2016 | Seattle, WA}
+\begin{tightemize}
+  \item Developed business critical software to validate payment instruments.
+  \item Integrated with AWS technologies such as AWS SWF, Lambda, S3, DynamoDB, SQS, and SNS.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{\href{https://www.cs.washington.edu/}{UW Allen School}}
+\descript{| Teaching Assistant}
+\location{Winter 2016 – Present | University of Washington}
+\begin{tightemize}
+  \item TA for CSE 446 Machine Learning (\href{https://courses.cs.washington.edu/courses/cse446/17sp/}{Spring 2017}, \href{https://courses.cs.washington.edu/courses/cse446/17au/}{Fall 2017}) and CSE 331 Software Design \& Implementation (\href{https://courses.cs.washington.edu/courses/cse331/16wi/}{Winter 2016}).
+  \item Planned and delivered lectures during weekly recitations.
+  \item Graded and provided feedback for weekly programming projects.
+  \item Met weekly with the lecturing professor to discuss course progress.
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Research}
+\runsubsection{\href{https://github.com/TellinaTool}{Tellina Tool}}
+\descript{| Undergraduate Researcher}
+\location{Jan 2017 – June 2017 | UW Allen School}
+\begin{tightemize}
+\item Advised by \href{https://homes.cs.washington.edu/~mernst/}{Michael Ernst} and
+\href{https://www.cs.washington.edu/people/faculty/lsz}{Luke Zettlemoyer}.
+\item Worked on a tool to generate bash commands from natural language.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{\href{https://uwplse.org/}{Programming Languages and Software Engineering Lab}}
+\descript{| Undergraduate Researcher}
+\location{Mar 2015 – Present | UW Allen School}
+\begin{tightemize}
+\item Advised by \href{https://homes.cs.washington.edu/~mernst/}{Michael Ernst} and
+\href{https://people.cs.umass.edu/~rjust/}{Ren{\'e} Just}.
+\item Built an \href{https://github.com/dericp/patch-minimization}{automatic bug finder} using patch minimization and delta debugging techniques.
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\section{Awards} 
+%\begin{tabular}{rll}
+%2014	     & top 52/2500  & KPCB Engineering Fellow\\
+%2014	     & 1\textsuperscript{st}/50  & Microsoft Coding Competition, Cornell\\
+%2013	     & National  & Jump Trading Challenge Finalist\\
+%2013     & 7\textsuperscript{th}/120 & CS 3410 Cache Race Bot Tournament  \\
+%2012     & 2\textsuperscript{nd}/150 & CS 3110 Biannual Intra-Class Bot Tournament \\
+%2011     & National & Indian National Mathematics Olympiad (INMO) Finalist \\
+%\end{tabular}
+%\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PUBLICATIONS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Publications} 
+\renewcommand\refname{\vskip -0.8cm} % Couldn't get this working from the .cls file
+\bibliographystyle{abbrv}
+\bibliography{publications}
+\nocite{*}
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
