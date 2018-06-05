@@ -147,9 +147,9 @@
  \ifthenelse{\equal{#3}{}}{}{ % If the third argument is not specified, don't print the job title and location line
   \\
   {\em #3} \hfill {\em #4} % Italic job title and location
-  }
+  }\vspace{-0.2em}%\smallskip
   }{
-  \vspace{0.5em} % Some space after the list of bullet points
+  \vspace{-0.2em} % Some space after the list of bullet points
 }
 
 % The below commands define the whitespace after certain things in the document - they can be \smallskip, \medskip or \bigskip
