@@ -1,0 +1,142 @@
+\documentclass{resume}
+
+% document margins
+\usepackage[left=0.75in,top=0.2in,right=0.75in,bottom=0.3in]{geometry}
+
+% name
+\name{Deric Pang}
+
+% header
+\address{\href{mailto:dericp@cs.washington.edu}{dericp@cs.washington.edu}}
+\address{\href{https://homes.cs.washington.edu/~dericp}
+              {https://homes.cs.washington.edu/\textasciitilde{}dericp}}
+
+\begin{document}
+
+\begin{rSection}{Education}
+
+  {\href{https://www.cs.washington.edu/}
+    {\bf University of Washington, Seattle}} \hfill {Graduating June 2019} \\
+  M.S. in Computer Science
+
+  \vspace{-0.2em}
+  {\href{https://www.cs.washington.edu/}
+        {\bf University of Washington, Seattle}}
+  \hfill {Sept. 2014 -- Mar. 2018} \\
+  B.S. in Computer Science \\
+  Honors: \emph{cum laude} (GPA: 3.79/4.00), \href{https://www.pbk.org/web}
+    {Phi Beta Kappa} \\
+  CRA Outstanding Undergraduate Researcher Award (Honorable Mention)
+
+  \vspace{-0.2em}
+  {\href{https://www.inf.ethz.ch/}
+    {\bf Swiss Federal Institute of Technology in Z\"{u}rich (ETH Z\"{u}rich)}}
+    \hfill {Sept. 2016 -- Feb. 2017} \\
+  University of Washington Computer Science \& Engineering Direct Exchange
+
+  % coursework
+  \vspace{-0.2em}
+  \begin{tabular}{ @{} >{\bfseries}l @{\hspace{3ex}} l }
+    Graduate Coursework: & Statistical Methods, Data Mining,
+      Information Retrieval \\
+    Senior Coursework: & Machine Learning, Natural Language Processing,
+      Data Visualization,\\ & Complexity, Algorithms, Graphics, Visual Computing 
+  \end{tabular}
+
+\end{rSection}
+
+\begin{rSection}{Experience}
+  \begin{rSubsection}{{\href{https://unity3d.ai/}{Unity Technologies}}}
+                      {June 2018 -- Sept. 2018}
+                      {Machine Learning Intern}
+                      {San Francisco, CA}
+    \item Shipped multi-agent curriculum learning in the
+      \href{https://github.com/Unity-Technologies/ml-agents}
+           {Unity Machine Learning Agents Toolkit}.
+    %\item \textbf{Something about \# issues or \# PRs.}
+  \end{rSubsection}
+
+  \begin{rSubsection}{{\href{http://www.nvidia.com/page/home.html}{NVIDIA}}}
+                      {Mar. 2018 -- June 2018}
+                      {Applied Research Intern}
+                      {Redmond, WA}
+    \item Created and investigated methods to train neural networks in
+      simulation for autonomous navigation.
+    \item Built a rover which was 7\% more autonomous than robots using
+      previously published techniques.
+  \end{rSubsection}
+
+  \begin{rSubsection}{\href{http://www.ark.cs.washington.edu/}
+                            {Noah's Ark} --- 
+                      \href{https://nlp.washington.edu/}
+                           {UW Natural Language Processing}}
+                     {Jan. 2018 -- Present}
+                     {Researcher, advised by
+                       \href{https://homes.cs.washington.edu/~nasmith/}
+                            {Noah Smith}}
+                     {University of Washington}
+    \item Improving natural language inference by incorporating linguistic
+      structure into neural attention networks.
+  \end{rSubsection}
+
+  \begin{rSubsection}{Alexa Machine Learning ---
+                       {\href{https://www.amazon.com/}{Amazon}}}
+                     {June 2017 -- Sept. 2017}
+                     {Software Development Engineering Intern}
+                     {Seattle, WA}
+    \item Shipped features in Amazon's internal deep learning framework
+      specialized for speech recognition.
+    \item Built a system to automatically convert Alexa's acoustic model into
+      other deep learning frameworks.
+  \end{rSubsection}
+
+  \begin{rSubsection}{\href{https://uwplse.org/}
+                           {Programming Languages and Software Engineering Lab}}
+                     {Mar. 2015 -- Jan. 2018}
+                     {Undergraduate Researcher, advised by
+                       \href{https://homes.cs.washington.edu/~mernst/}
+                            {Michael Ernst},
+                       \href{https://www.cs.washington.edu/people/faculty/lsz}
+                            {Luke Zettlemoyer},
+                       and \href{https://people.cs.umass.edu/~rjust/}
+                                {Ren{\'e} Just}}
+                     {University of Washington}
+  \item Worked on the \href{https://github.com/TellinaTool}{Tellina} project
+    \citep{LinWPVZE2017:TR} to generate bash commands from plain English using deep learning.
+  \item Created an \href{https://github.com/dericp/patch-minimization}
+                        {automatic bug finder}
+    using patch minimization and delta debugging techniques
+    \citep{PearsonCJFAEPK2017}.
+  \end{rSubsection}
+  
+  \begin{rSubsection}{\href{http://www.marchex.com/}{Marchex}}
+    {June 2016 -- Sept. 2016}{Software Engineering/Research Intern}{Seattle, WA}
+  \item Built an automatic speech recognition system based on the Deep Speech 2
+    neural network architecture.
+  \end{rSubsection}
+
+  \begin{rSubsection}{\href{https://www.amazon.com/}{Amazon}}
+                     {Mar. 2016 -- June 2016}
+                     {Software Development Engineering Intern}
+                     {Seattle, WA}
+  \item Used AWS SWF, Lambda, S3, DynamoDB, SQS, and SNS to automatically update
+    bank account validation files.
+  \end{rSubsection}
+%\end{rSection}
+
+%\begin{rSection}{Skills Summary}
+
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{3ex}} l }
+  Languages: & Python, Java, C, C++, Shell, Scala, HTML \& CSS, JavaScript,
+  \LaTeX \\
+  Tech/Tools: & PyTorch, MXNet, TensorFlow, AWS, D3, Git, Ant, Gradle, Kaldi
+\end{tabular}
+
+\end{rSection}
+
+\begin{rSection}{Publications}
+\bibliographystyle{abbrv}
+\bibliography{publications}
+\end{rSection}
+
+\end{document}
