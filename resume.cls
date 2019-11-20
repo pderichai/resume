@@ -26,12 +26,11 @@
 \usepackage[parfill]{parskip} % Remove paragraph indentation
 \usepackage{array} % Required for boldface (\bf and \bfseries) tabular columns
 \usepackage{ifthen} % Required for ifthenelse statements
-\usepackage{fontspec} % Custom macOS fonts
-\usepackage{cite} % Publications
 \usepackage{natbib}
 \usepackage{hyperref} % Links in resume
+\usepackage{gillius2}
 
-\setmainfont{GillSans} % font name may be different on non-macOS systems
+\setmainfont{Gillius ADF No2}
 
 \pagestyle{empty} % Suppress page numbers
 
