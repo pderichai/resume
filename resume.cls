@@ -16,10 +16,10 @@
 %
 % Created by Trey Hunner and modified by www.LaTeXTemplates.com
 %
-% Edited by Deric Pang
+% Modified by Deric Pang
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\ProvidesClass{resume}[2010/07/10 v0.9 Resume class]
+\ProvidesClass{resume}[2020/07/20 v1.0 Resume class]
 
 \LoadClass[11pt,letterpaper]{article} % Font size and paper type
 
