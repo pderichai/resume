@@ -16,7 +16,7 @@
 %
 % Created by Trey Hunner and modified by www.LaTeXTemplates.com
 %
-% Modified by Deric Pang
+% Further modified by Deric Pang.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \ProvidesClass{resume}[2020/07/20 v1.0 Resume class]
@@ -41,7 +41,7 @@
 \def \name#1{\def\@name{#1}} % Defines the \name command to set name
 \def \@name {} % Sets \@name to empty by default
 
-\def \addressSep {|} % Set default address separator to a diamond
+\def \addressSep {|}
 
 % One, two or three address lines can be specified 
 \let \@addressone \relax
@@ -105,7 +105,7 @@
   \sectionlineskip
   \hrule % Horizontal line
   \begin{list}{}{ % List for each individual item in the section
-    \setlength{\leftmargin}{1.5em} % Margin within the section
+    \setlength{\leftmargin}{0em} % Margin within the section
   }
   \item[]
 }{
@@ -115,7 +115,7 @@
 % Qualifications environment to list objectives or skills.
 \newenvironment{rQualifications}{
   \vspace{0.5em} % Some space after the list of bullet points
-  \begin{list}{$\cdot$}{\leftmargin=0em} % \cdot used for bullets, no indentation
+  \begin{list}{$\cdot$}{\leftmargin=em} % \cdot used for bullets, no indentation
    \itemsep -0.5em \vspace{-0.5em} % Compress items in list together for aesthetics
   }{
   \end{list}
@@ -133,7 +133,7 @@
   \\
   {\em #3} \hfill {\em #4} % Italic job title and location
   }\vspace{-0.2em}%\smallskip
-  \begin{list}{$\cdot$}{\leftmargin=0em} % \cdot used for bullets, no indentation
+  \begin{list}{$\cdot$}{\leftmargin=1em} % \cdot used for bullets, no indentation
    \itemsep -0.8em \vspace{-0.5em} % Compress items in list together for aesthetics
   }{
   \end{list}
@@ -158,5 +158,5 @@
 \def\nameskip{\medskip} % The space after your name at the top
 \def\sectionskip{\smallskip} % The space after the heading section
 
-% Custom stuff
+% Override the references header.
 \renewcommand\refname{\vskip -2.5em}
