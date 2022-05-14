@@ -29,8 +29,7 @@
 \usepackage{natbib}
 \usepackage{hyperref} % Links in resume
 \usepackage{gillius2}
-
-\setmainfont{Gillius ADF No2}
+\renewcommand{\familydefault}{\sfdefault}
 
 \pagestyle{empty} % Suppress page numbers
 
