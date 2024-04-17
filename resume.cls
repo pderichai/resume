@@ -29,7 +29,8 @@
 \usepackage{natbib}
 \usepackage{hyperref} % Links in resume
 \usepackage{gillius2}
-\renewcommand{\familydefault}{\sfdefault}
+
+\setmainfont{Whyte} % Set the font here.
 
 \pagestyle{empty} % Suppress page numbers
 
@@ -49,32 +50,32 @@
 
 % \address command can be used to set the first, second, and third address (last 2 optional)
 \def \address #1{
-  \@ifundefined{@addresstwo}{
-    \def \@addresstwo {#1}
-  }{
-  \@ifundefined{@addressthree}{
-  \def \@addressthree {#1}
-  }{
-     \def \@addressone {#1}
-  }}
+	\@ifundefined{@addresstwo}{
+		\def \@addresstwo {#1}
+	}{
+		\@ifundefined{@addressthree}{
+			\def \@addressthree {#1}
+		}{
+			\def \@addressone {#1}
+		}}
 }
 
 % \printaddress is used to style an address line (given as input)
 \def \printaddress #1{
-  \begingroup
-    \def \\ {\addressSep\ }
-    \centerline{#1}
-  \endgroup
-  \par
-  \addressskip
+\begingroup
+\def \\ {\addressSep\ }
+\centerline{#1}
+\endgroup
+\par
+\addressskip
 }
 
 % \printname is used to print the name as a page header
 \def \printname {
-  \begingroup
-    \hfil{{\namesize \@name}}\hfil
-    \nameskip\break
-  \endgroup
+	\begingroup
+	\hfil{{\namesize \@name}}\hfil
+	\nameskip\break
+	\endgroup
 }
 
 %----------------------------------------------------------------------------------------
@@ -83,14 +84,14 @@
 
 \let\ori@document=\document
 \renewcommand{\document}{
-  \ori@document  % Begin document
-  \printname % Print the name specified with \name
-  \@ifundefined{@addressone}{}{ % Print the first address if specified
-    \printaddress{\@addressone}}
-  \@ifundefined{@addresstwo}{}{ % Print the second address if specified
-    \printaddress{\@addresstwo}}
-     \@ifundefined{@addressthree}{}{ % Print the third address if specified
-    \printaddress{\@addressthree}}
+	\ori@document  % Begin document
+	\printname % Print the name specified with \name
+	\@ifundefined{@addressone}{}{ % Print the first address if specified
+		\printaddress{\@addressone}}
+	\@ifundefined{@addresstwo}{}{ % Print the second address if specified
+		\printaddress{\@addresstwo}}
+	\@ifundefined{@addressthree}{}{ % Print the third address if specified
+		\printaddress{\@addressthree}}
 }
 
 %----------------------------------------------------------------------------------------
@@ -99,26 +100,26 @@
 
 % Defines the rSection environment for the large sections within the CV
 \newenvironment{rSection}[1]{ % 1 input argument - section name
-  \sectionskip
-  \MakeUppercase{\bf #1} % Section title
-  \sectionlineskip
-  \hrule % Horizontal line
-  \begin{list}{}{ % List for each individual item in the section
-    \setlength{\leftmargin}{0em} % Margin within the section
-  }
-  \item[]
-}{
-  \end{list}
+	\sectionskip
+	\MakeUppercase{\bf #1} % Section title
+	\sectionlineskip
+	\hrule % Horizontal line
+	\begin{list}{}{ % List for each individual item in the section
+			\setlength{\leftmargin}{0em} % Margin within the section
+		}
+		\item[]
+		      }{
+	\end{list}
 }
 
 % Qualifications environment to list objectives or skills.
 \newenvironment{rQualifications}{
-  \vspace{0.5em} % Some space after the list of bullet points
-  \begin{list}{$\cdot$}{\leftmargin=em} % \cdot used for bullets, no indentation
-   \itemsep -0.5em \vspace{-0.5em} % Compress items in list together for aesthetics
-  }{
-  \end{list}
-  \vspace{0.5em} % Some space after the list of bullet points
+	\vspace{0.5em} % Some space after the list of bullet points
+	\begin{list}{$\cdot$}{\leftmargin=em} % \cdot used for bullets, no indentation
+		\itemsep -0.5em \vspace{-0.5em} % Compress items in list together for aesthetics
+		}{
+	\end{list}
+	\vspace{0.5em} % Some space after the list of bullet points
 }
 
 
@@ -127,27 +128,27 @@
 %----------------------------------------------------------------------------------------
 
 \newenvironment{rSubsection}[4]{ % 4 input arguments - company name, year(s) employed, job title and location
- {\bf #1} \hfill {#2} % Bold company name and date on the right
- \ifthenelse{\equal{#3}{}}{}{ % If the third argument is not specified, don't print the job title and location line
-  \\
-  {\em #3} \hfill {\em #4} % Italic job title and location
-  }\vspace{-0.2em}%\smallskip
-  \begin{list}{$\cdot$}{\leftmargin=1em} % \cdot used for bullets, no indentation
-   \itemsep -0.8em \vspace{-0.5em} % Compress items in list together for aesthetics
-  }{
-  \end{list}
-  \vspace{-0.2em} % Some space after the list of bullet points
+{\bf #1} \hfill {#2} % Bold company name and date on the right
+\ifthenelse{\equal{#3}{}}{}{ % If the third argument is not specified, don't print the job title and location line
+\\
+{\em #3} \hfill {\em #4} % Italic job title and location
+}\vspace{-0.2em}%\smallskip
+\begin{list}{$\cdot$}{\leftmargin=1em} % \cdot used for bullets, no indentation
+	\itemsep -0.8em \vspace{-0.5em} % Compress items in list together for aesthetics
+	}{
+\end{list}
+\vspace{-0.2em} % Some space after the list of bullet points
 }
 
 % An rSubsection that doesn't have any content
 \newenvironment{rSubheader}[4]{ % 4 input arguments - company name, year(s) employed, job title and location
- {\bf #1} \hfill {#2} % Bold company name and date on the right
- \ifthenelse{\equal{#3}{}}{}{ % If the third argument is not specified, don't print the job title and location line
-  \\
-  {\em #3} \hfill {\em #4} % Italic job title and location
-  }\vspace{-0.2em}%\smallskip
-  }{
-  \vspace{-0.2em} % Some space after the list of bullet points
+{\bf #1} \hfill {#2} % Bold company name and date on the right
+\ifthenelse{\equal{#3}{}}{}{ % If the third argument is not specified, don't print the job title and location line
+\\
+{\em #3} \hfill {\em #4} % Italic job title and location
+}\vspace{-0.2em}%\smallskip
+}{
+\vspace{-0.2em} % Some space after the list of bullet points
 }
 
 % The below commands define the whitespace after certain things in the document - they can be \smallskip, \medskip or \bigskip

@@ -1,5 +1,5 @@
 resume: resume.tex
-	pdflatex resume.tex
+	xelatex resume.tex
 	bibtex resume
-	pdflatex resume.tex
-	pdflatex resume.tex
+	xelatex resume.tex
+	xelatex resume.tex
